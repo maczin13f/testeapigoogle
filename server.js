@@ -16,8 +16,8 @@ passport.deserializeUser((user, done) => done(null, user));
 
 // Configura estratégia Google
 passport.use(new GoogleStrategy({
-    clientID: "647839469498-thrj382cgqdu0ti8m5ued8t3g5jnv73p.apps.googleusercontent.com",
-    clientSecret: "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",
+    clientID: "746977735603-r9m3nv7sedf1qt5etubge1o8nrbmosng.apps.googleusercontent.com",
+    clientSecret: "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",
     callbackURL: "https://testeapigoogle.onrender.com/auth/google/callback"
   },
   async (accessToken, refreshToken, profile, done) => {
@@ -60,3 +60,4 @@ async function salvarUsuarioNoBanco(userData) {
 }
 
 app.listen(3000, () => console.log("Servidor rodando em http://localhost:3000"));
+
